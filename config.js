@@ -26,7 +26,6 @@ module.exports = {
 //        coefficient: 1.002 //hack to increase accuracy of distance.
 //    },
     httpPort: 8080, //The port is important!! it is used for stopping the service, so it must be the same as the PORT in the init.d/upnp file.
-    peerPrefix: "/upnp",
-
+    peerPrefix: "/upnp"
 };
 

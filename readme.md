@@ -19,6 +19,23 @@ iCreate2 robot.
 - clone this repo in /home/pi (or equivalent)
 - `npm install`
 - `sudo npm start` this will put the service.js file to run at the system restart automatically as a service
+- `sudo update-rc.d upnp defaults` this will register the service to run at boot.
 
+## Configure Device
+- Edit the `config.js` file, select a uuid, serial number and upc specific for your robot.
+
+## Run the Device
+- Now you can either restart the PI, or run `sudo service upnp start` to start the service.
+
+## Testing Installation
+- **Log File:** on the PI, the service log can be found in `/var/log/robot.log`
+- **Remote access** from a machine on the network that has node, run `node tests/test-upnp.js` (just needs this file and the peer-upnp package installed)
+
+## Uninstall
+- `sudo service upnp stop`
+- `sudo update-rc.d -f upnp remove`
+- `sudo rm /etc/init.d/upnp`
+- `sudo rm /var/log/robot.log`
+- remove the directory in which you cloned the git.
 
  
