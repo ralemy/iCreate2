@@ -5,7 +5,10 @@ module.exports = {
     device:{
         uuid:"6bd5eabd-b7c8-4f7b-ae6c-a30ccdeb0001",
         deviceSerial: "1248-0000-0000-0001",
-        upc: "124800000001"
+        upc: "124800000001",
+        domain: "schemas-impinj-com",
+        serviceType: "SVLRobot",
+        serviceVersion: "1"
     },
 
 //    baudrate: 115200,
