@@ -4,7 +4,7 @@
   "description": "package to control iRobot iCreate2 as a UPNP device",
   "main": "server.js",
   "scripts": {
-    "start": "export BASE=`pwd`; chmod a+x $BASE/init.d/upnp; echo ln -s $BASE/init.d/upnp /etc/init.d/upnp;"
+    "start": "export BASE=`pwd`; chmod a+x $BASE/init.d/upnp; ln -s $BASE/init.d/upnp /etc/init.d/upnp;"
   },
   "keywords": [
     "iRobot",
