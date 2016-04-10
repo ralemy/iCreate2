@@ -12,6 +12,12 @@ iCreate2 robot.
 - The iRobot iCreate2 device, which comes with a USB to serial port
 - Tested with Raspberry PI3: running raspberian Jessie
 - External Battery to power the PI. tested with Duracell Coppertop Portable power battery DU7213
+- Controlling computer. tested with Mac OSX, running Node-RED and node-red-contrib-icreate2-upnp
+
+## Hardware Setup:
+- Connect the USB cable to PI and the robot
+- Connect the battery to the PI
+- Once the PI boots, set up Wifi to be on the same network as the controlling computer
 
 ## Setting up Raspberry PI
 - Install latest node on PI and connect it to Internet. 
