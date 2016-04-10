@@ -31,6 +31,9 @@ iCreate2 robot.
 - **Log File:** on the PI, the service log can be found in `/var/log/robot.log`
 - **Remote access** from a machine on the network that has node, run `node tests/test-upnp.js` (just needs this file and the peer-upnp package installed)
 
+## Updating
+- `git pull`
+
 ## Uninstall
 - `sudo service upnp stop`
 - `sudo update-rc.d -f upnp remove`
