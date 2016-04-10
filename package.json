@@ -1,6 +1,6 @@
 {
   "name": "pyrobot",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "package to control iRobot iCreate2 as a UPNP device",
   "main": "server.js",
   "scripts": {
