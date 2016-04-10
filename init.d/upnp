@@ -1,0 +1,32 @@
+#! /bin/sh
+# /etc/init.d/upnp
+
+### BEGIN INIT INFO
+# Provides: upnp
+# Required-Start: $remote_fs $syslog $network
+# Required-Stop: $remote_fs $syslog $network
+# Default-Start: 2 3 4 5
+# Default-Stop: 0 1 6
+# Short-Desciption: upnp service execution for iRobot iCreate
+# Description: starts the nodejs packages that advertises this machine as an SVLRobot
+### END INIT INFO
+
+PORT=8080
+
+case "$1" in
+start)
+echo "Starting upnp"
+/usr/bin/node /home/pi/robot/service.js -p $PORT 2>&1 >>/var/log/robot.log 2>&1 &
+;;
+stop)
+fuser -k -n tcp $PORT >/dev/null
+echo "Stopping upnp"
+;;
+*)
+echo "Usage upnp {start|stop}"
+exit 1
+;;
+esac
+
+exit 0
+

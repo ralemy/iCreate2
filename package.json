@@ -1,0 +1,23 @@
+{
+  "name": "pyrobot",
+  "version": "1.0.1",
+  "description": "package to control iRobot iCreate2 as a UPNP device",
+  "main": "server.js",
+  "scripts": {
+    "start": "export BASE=`pwd`; chmod a+x $BASE/init.d/upnp; echo ln -s $BASE/init.d/upnp /etc/init.d/upnp;"
+  },
+  "keywords": [
+    "iRobot",
+    "iCreate",
+    "IoT",
+    "upnp"
+  ],
+  "author": "Reza Alemy",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.6.1",
+    "peer-upnp": "0.0.5",
+    "q": "^1.4.1",
+    "serialport": "^2.0.6"
+  }
+}
